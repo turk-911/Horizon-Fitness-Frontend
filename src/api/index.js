@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:8080/api/",
+  baseURL: "https://horizon-fitness-backend.onrender.com/api/",
 });
 
 export const UserSignUp = async (data) => API.post("/user/signup", data);
